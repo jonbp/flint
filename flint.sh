@@ -1,8 +1,6 @@
 #!/bin/bash -e
 
 # Get local .env
-
-
 if [ -f ./.env ]; then
 	source ./.env
 else
