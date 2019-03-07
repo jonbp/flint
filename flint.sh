@@ -43,11 +43,6 @@ fi
 # VARIABLES START
 # ——————
 
-# Default Locale
-if [ -z "$locale" ] ; then
-	locale="en_US"
-fi
-
 # Style Variables
 formatBreak="\033[90m―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――\033[0m"
 

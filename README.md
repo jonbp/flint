@@ -33,9 +33,6 @@ It can easily be created by running the command `flint vars`. This command can a
 Here's and example of this file:
 
 ~~~~
-# Locale
-locale='en_GB'
-
 # Editor
 editor='code'
 
