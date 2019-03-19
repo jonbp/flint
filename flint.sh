@@ -240,7 +240,11 @@ done
 for E in "${plugins[@]}"; do
     c_plugins+=("wpackagist-plugin/${E}")
 done
-composer require "${c_active_plugins[@]}" "${c_plugins[@]}"
+composer require ${c_active_plugins[@]} ${c_plugins[@]}
+
+if [ "$woo" == y ] ; then
+	composer require wpackagist-theme/storefront
+fi
 
 # Activate Plugins
 wp plugin activate ${active_plugins[*]}
