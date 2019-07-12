@@ -8,7 +8,7 @@ Navigate to the directory where your base bedrock site is installed and run the 
 
 Answer the questions when prompted, at the end of the installation you'll be provided with the username and password to login.
 
-Flint will create the database for you, there is no need to create one before hand.
+Flint will create the database for you, there is no need to create one before hand. All you need to do is define the name of the desired database in bedrock's `.env` file and this script will create the database (so long as your MySQL user has permission to do so).
 
 ## Installation
 To install Flint, ensure that your system meets the following requirements:

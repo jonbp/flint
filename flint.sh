@@ -1,13 +1,5 @@
 #!/usr/bin/env bash
 
-# Get local .env
-if [ -f ./.env ]; then
-	source ./.env
-else
-	echo -e '\033[91mError:\033[0m .env not found. You need to be inside a bedrock directory.' >&2
-	exit 0
-fi
-
 # Get Variables File
 if [ -f ~/.config/flint/vars ]; then
 	source ~/.config/flint/vars
@@ -32,6 +24,14 @@ fi
 # ——————
 # VAR FILE EDIT END
 # ——————
+
+# Get local .env + check
+if [ -f ./.env ]; then
+	source ./.env
+else
+	echo -e '\033[91mError:\033[0m .env not found. You need to be inside a bedrock directory.' >&2
+	exit 0
+fi
 
 # WP CLI Check
 if ! [ -x "$(command -v wp)" ]; then
