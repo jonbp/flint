@@ -122,10 +122,6 @@ echo "Install WooCommerce? (y/n)"
 read -e woo
 echo ""
 
-echo "Install Redirection? (y/n)"
-read -e redirection
-echo ""
-
 echo "Disable Blog? (y/n)"
 read -e disableblog
 echo ""
@@ -215,11 +211,6 @@ wp rewrite flush --hard
 # WooCommerce Install Option
 if [ "$woo" == y ] ; then
 	active_plugins+=('woocommerce')
-fi
-
-# Redirection Install Option (Not activated on install)
-if [ "$redirection" == y ] ; then
-	plugins+=('redirection')
 fi
 
 # Disable Plugin Options
